@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <body>
+        <form>
+            Username:<input type="text"
+            name="firstname"/>
+            <br>
+            
+            <input type="submit"/>
+        </form>
+        <button onclick="myfunction()">click me</button>
+        <p id="="demo></p>
+        <script>
+            function myfunction()
+            {
+                document.getElementById("demo").innerHTML
+                = "hello world";
+                //alert("hello");
+            }
+    
+    
+            function validateForm()
+            {
+                var x=document.forms["myform"]["fname"].value;
+                if(x=="")
+                {
+                    alert("name must be filled out");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+    </html>
